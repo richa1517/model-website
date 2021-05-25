@@ -1,0 +1,206 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+#header-nav{
+    background-color:#002db3;
+    padding: 25px;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #eb246d;
+  }
+nav{
+    overflow: auto;
+}
+#links a{
+    color: white;
+}
+#links a:hover{
+    color:#002db3 ;
+}
+#links li:hover{
+    background-color: white;
+}
+/*#background{
+    margin-top:80px;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    position: absolute;
+    background-attachment: fixed;
+    background: url("img/table.jpg") no-repeat center;
+    background-size: cover;
+}*/
+#background{
+    background: url("img/table.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#jumbotron{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 30px;
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(0, 45, 179,0.5);
+    color: white;
+    border-radius: 6px;
+    
+}
+.about{
+    background: url("img/about.jpg") no-repeat center fixed ;
+    background-size:cover;
+    color: white;
+    display: table;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+#about{
+    color: black;
+    /*padding-top: 750px;*/
+}
+
+.vb{
+    width: 80%;
+}
+
+
+#f1_container {
+    position: relative;
+    margin: 10px auto;
+    width: 450px;
+    height: 281px;
+    z-index: 1;
+  }
+  #f1_container {
+    perspective: 1000;
+  }
+  #f1_card {
+    width: 80%;
+    height: 80%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+  }
+  #f1_container:hover #f1_card {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+  }
+  .face {
+    position: absolute;
+    margin-top: 30px;
+    width: 80%;
+    height: 80%;
+    backface-visibility: hidden;
+  }
+  .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    color: #aaa;
+    text-align: left;
+    background-color: white;
+  }
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+h4{
+    color: #002db3;
+}
+.glyphicon{
+    font-size: 30px;
+    color: #002db3;
+}
+#portfolio{
+    background: #e6e6e6;
+}
+.customers{
+    background: #99ffd6;
+    border:black;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
+.panel-footer{
+    background-color:  #204060;
+    color: white;
+}
+/*.blog
+    border-radius: 5px;
+    border: 10px #c44dff;
+    background: url('img/blog.jpg') no-repeat center fixed ;
+    height: 100px;
+    background-size:cover;
+    margin-top: 750px;
+    padding-top: 100px;
+}*/
+.blog{
+    background: url('img/blog.jpg') no-repeat center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+#blog > p{
+    font-size: 18px;
+} 
+#blog > h3{
+    font-weight: bold;
+}
+.map{
+    overflow: hidden;
+}
+.servicesclass{
+    margin-left: auto;
+        margin-right: auto;
+display: table-cell;
+vertical-align: middle;
+overflow: hidden;
+}
+@media screen and (max-width: 360px){
+    .vb{
+        width: 60%;
+    }
+    #blog img{
+        width: 100%;
+        padding: 25px;
+    }
+    #f1_card{
+        width: 200px;
+    }
+    
+    
+}
